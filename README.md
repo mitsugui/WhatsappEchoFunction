@@ -13,7 +13,9 @@ No site da Meta para desenvolvedores, abra seus [Apps](https://developers.facebo
 Configure um webhook informando a URL da função no Azure Functions (por exemplo, https://meuapp.azurewebsites.net/api/HttpEcho) e informe uma palavra chave (ex.: minhachavesecreta) qualquer que será usada para validação. Ative o campo do tipo **messages** (Deve ficar marcado como Assinado)
 
 No Azure Functions configure as seguintes variáveis de ambiente:
+
 `VERIFY_TOKEN: minhachavesecreta` (ou outra palavra chave escolhida)
+
 `WHATSAPP_TOKEN: EAA...xxx` (token gerado no portal do desenvolvedor)
 
 Existem alguns testes no arquivo Tests.http
